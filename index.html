@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Interactive contact form with JavaScript validation and dark mode."
+    >
+
+    <title>Contact Me | JavaScript Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Shahnzay<span>.</span></a>
+
+        <button
+            type="button"
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Switch to dark mode"
+        >
+            🌙 Dark Mode
+        </button>
+    </header>
+
+    <main class="main-container">
+
+        <section class="introduction">
+            <p class="small-heading">LET'S CONNECT</p>
+
+            <h1>Contact Me</h1>
+
+            <p>
+                Have a question, project idea, or internship opportunity?
+                Fill in the form and send me a message.
+            </p>
+
+            <div class="contact-details">
+                <div class="detail-card">
+                    <span class="detail-icon">✉</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>Send me your inquiry</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <span class="detail-icon">⌖</span>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Lahore, Pakistan</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <span class="detail-icon">✓</span>
+
+                    <div>
+                        <h3>Availability</h3>
+                        <p>Open to internship opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form id="contactForm" novalidate>
+
+                <h2>Send a Message</h2>
+
+                <p class="form-description">
+                    Complete all the fields below.
+                </p>
+
+                <div class="form-group">
+                    <label for="name">
+                        Full Name <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                    >
+
+                    <p class="error-message" id="nameError"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        Email Address <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                    >
+
+                    <p class="error-message" id="emailError"></p>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">
+                        Message <span>*</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here"
+                    ></textarea>
+
+                    <p class="error-message" id="messageError"></p>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Send Message
+                </button>
+
+                <p
+                    id="successMessage"
+                    class="success-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Shahnzay Shahmir. JavaScript Week 2 Project.
+        </p>
+    </footer>
+
+    <!-- JavaScript file linked at the bottom of body -->
+    <script src="script.js"></script>
+
+</body>
+</html>
