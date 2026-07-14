@@ -297,8 +297,4 @@ Lahore, Pakistan
 GitHub:
 https://github.com/shahnzayshahmeer-lgtm
 
----
 
-# 📜 License
-
-This project was developed for educational purposes as part of a university Web Development assignment.
